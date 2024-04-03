@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator PPN dan DPP</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="calculator">
+    <h4 style="text-align: center;">TUGAS PERANCANGAN SISTEM INFORMASI KELOMPOK 13</h4>
+  <h2>Kalkulator PPN dan DPP</h2>
+  <div>
+    <label for="calc-type">Pilih Kalkulasi:</label>
+    <select id="calc-type">
+      <option value="ppn">Hitung PPN dari DPP</option>
+      <option value="dpp">Hitung DPP dari PPN</option>
+    </select>
+  </div>
+  <input type="number" id="input-value" placeholder="Masukkan Nilai">
+  <div>
+    <label for="ppn-rate">Pilih Tarif PPN:</label>
+    <select id="ppn-rate">
+      <option value="0.1">10%</option>
+      <option value="0.11">11%</option>
+      <option value="0.12">12%</option>
+    </select>
+  </div>
+  <button onclick="calculate()">Hitung</button>
+  <p id="result-label"></p>
+  <p id="result"></p>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
